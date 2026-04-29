@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "html-app"
-        DOCKER_TAG = "latest"
-        DOCKERHUB_USER = "sloth69"
-    }
+    DOCKER_IMAGE = "html-app"
+    DOCKER_TAG = "latest"
+    DOCKERHUB_USER = "sloth69"
+    PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+}
 
     stages {
 
